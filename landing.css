@@ -1,0 +1,54 @@
+/* Codigo Main */
+/* seccion 1 */
+.main{
+  background-color: var(--secondary-color);
+  margin: 0;
+  width: 100%;
+  margin-top: 5%;
+  
+}
+.section-1{
+  margin: auto;
+  width: var(--width-box);
+  display: flex;
+  
+}
+.section__title{
+  width: 100%;
+  
+}
+.section-1__title{
+  color: var(--color-titles-subtitles);
+  font-size: 3.24em;
+}
+.section-1__paragraph{
+  color: var(--color-titles-subtitles);
+  font-size: 2em;
+}
+.imagen-main{
+  margin-top: 6%;
+  width: 100%;
+  border-radius: 30px;
+}
+.login{
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  padding: 10px;
+  width: 100%;
+}
+.login:hover{
+  background-color: var(--color-titles-subtitles);
+}
+.registro{
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  padding: 10px;
+  
+}
+.registro:hover{
+  background-color: var(--color-titles-subtitles);
+}
