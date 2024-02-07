@@ -1,0 +1,45 @@
+
+/* Codigo header */
+    :root {
+  --primary-color: #FF84AB;
+  --secondary-color: #FFCBE3;
+  --color-titles-subtitles: #CC0A43;
+  --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-size: 16px;
+  --width-box: 50%;
+}
+
+body {
+  font-family: var(--font);
+  font-size: var(--font-size);
+  margin: 0;
+  background-color: var(--secondary-color);
+}
+
+.header {
+  background-color: var(--primary-color); 
+  color: white; 
+  padding: 10px 20px;
+  width: 100%;
+  position:fixed;
+  top: 0;
+}
+
+.navbar {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  margin: auto;
+  width: var(--width-box);
+}
+
+.navbar__link {
+  color: white; 
+  text-decoration: none; 
+  margin-right: 20px; 
+}
+
+.navbar__logo {
+  max-width: 40px; 
+  height: auto; 
+}
