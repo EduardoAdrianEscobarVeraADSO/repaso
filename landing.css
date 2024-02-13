@@ -263,9 +263,9 @@
   font-weight: bold;
 }
 
-/* Media queries para dispositivos móviles */
+
 @media only screen and (max-width: 768px) {
-  /* Ajustes generales */
+
   .navbar {
     align-items: center;
     justify-content: center;
@@ -300,7 +300,7 @@
     display: block;
   }
 
-  /* Ajustes específicos */
+ 
   .imagen-main {
     display: none;
   }
@@ -323,7 +323,7 @@
   }
 
   .footer__list {
-    margin-bottom: 20px;
+    display: none;
   }
 
   .footer__item {
@@ -413,3 +413,72 @@
     width: 90%;
   }
 }
+@media only screen and (max-width: 550px) {
+  /* Centrar el contenido de la barra de navegación */
+  .header__navbar {
+    justify-content: center;
+  }
+
+  /* Centrar el contenido de las secciones */
+  .main {
+    margin-top: 15%;
+    padding: 0 10px;
+  }
+
+  .section-1,
+  .section-2,
+  .section-3,
+  .section-4,
+  .section-5 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  /* Mostrar solo un par de columnas en las secciones 2 y 3 */
+  .section-2 {
+    display: block;
+  }
+
+  /* Ajustes específicos para la section 3 */
+  .section-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+
+  /* Ocultar la imagen principal en pantallas pequeñas */
+  .imagen-main {
+    display: none;
+  }
+
+  /* Centrar el contenido del código QR */
+  .box-final__image {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Ajustes para el footer */
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; /* Agregar esta regla para incluir el relleno en el ancho total */
+  }
+
+  .footer__list,
+  .footer__item {
+    margin-bottom: 20px;
+  }
+
+  .footer__privacy,
+  .footer__terms {
+    width: 90%;
+    text-align: center; /* Ajuste del alineado del texto en el footer */
+  }
+}
+
