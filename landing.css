@@ -29,6 +29,7 @@
   margin-top: 6%;
   width: 100%;
   border-radius: 30px;
+  height: auto;
 }
 .login{
   text-decoration: none;
@@ -124,14 +125,14 @@
 .section-4 {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra verticalmente */
+  align-items: center; 
   text-align: center;
 }
 
 .section-4__plans {
-  display: flex; /* Cambiamos de grid a flex para centrar los planes */
-  flex-wrap: wrap; /* Permitimos que los elementos se envuelvan a la siguiente línea si es necesario */
-  justify-content: center; /* Centramos horizontalmente */
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
   gap: 20px;
 }
 
@@ -139,8 +140,8 @@
   background-color: var(--primary-color);
   border-radius: 20px;
   padding: 20px;
-  width: 300px; /* Ancho deseado */
-  max-width: 50%; /* Ancho máximo */
+  width: 300px; 
+  max-width: 50%; 
 }
 
 
@@ -234,10 +235,13 @@
   padding: 0;
   margin: 0;
   display: flex; 
+  flex-direction: column;
+  gap: 10px;
 }
 
 .footer__item {
   margin-right: 20px;
+
 }
 
 .footer__link {
@@ -245,8 +249,8 @@
   color: white;
 }
 
-.footer__contact {
-  margin-right: 15%; 
+.footer__contact{
+  margin-right: 10%;
 }
 
 .footer__privacy,
@@ -263,8 +267,7 @@
   font-weight: bold;
 }
 
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
 
   .navbar {
     align-items: center;
@@ -289,7 +292,8 @@
   }
 
   .section-3 {
-    display: block;
+    display: flex;
+    justify-content: center;
   }
 
   .section-4 {
@@ -338,37 +342,16 @@
   }
 }
 
-@media only screen and (max-width: 550px) {
-  /* Centrar el contenido de la barra de navegación */
-  .header__navbar {
-    justify-content: center;
-  }
-
-  /* Centrar el contenido de las secciones */
-  .main {
-    margin-top: 15%;
-    padding: 0 10px;
-  }
-
-  .section-1,
-  .section-2,
-  .section-3,
-  .section-4,
-  .section-5 {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    align-items: center;
-  }
-
-  /* Mostrar solo un par de columnas en las secciones 2 y 3 */
-  .section-2 {
-    display: block;
-  }
-
-  /* Ajustes específicos para la section 3 */
+@media only screen and (max-width: 768px) {
   .section-3 {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    
+  }
+  .step-container{
+     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 20px;
@@ -382,38 +365,38 @@
   .section-3 :nth-child(4){
     grid-column: 2;
     grid-row: 2;
+
   }
 
-  /* Ocultar la imagen principal en pantallas pequeñas */
-  .imagen-main {
+}
+@media only screen and (max-width: 426px) {
+  .navbar__link{
     display: none;
   }
-
-  /* Centrar el contenido del código QR */
-  .box-final__image {
-    display: block;
-    margin: 0 auto;
+  .header__navbar{
+    margin: 0;
+    justify-content: flex-start;
+  }
+  .section-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    
   }
 
-  /* Ajustes para el footer */
-  .footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box; /* Agregar esta regla para incluir el relleno en el ancho total */
+  .section-3 :nth-child(3){
+    grid-column: 1;
+    grid-row: 2;
   }
 
-  .footer__list,
-  .footer__item {
-    margin-bottom: 20px;
-  }
+  .section-3 :nth-child(4){
+    grid-column: 2;
+    grid-row: 2;
 
-  .footer__privacy,
-  .footer__terms {
-    width: 90%;
-    text-align: center; /* Ajuste del alineado del texto en el footer */
+  }
+  .footer__contact{
+    display: none;
   }
 }
 

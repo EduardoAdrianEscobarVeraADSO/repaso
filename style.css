@@ -43,3 +43,6 @@ body {
   max-width: 40px; 
   height: auto; 
 }
+.navbar__link:hover{
+   color: var(--color-titles-subtitles);
+  }
