@@ -20,7 +20,7 @@ body {
   background-color: var(--primary-color); 
   color: white; 
   padding: 10px 20px;
-  width: 100%;
+  width: 100vw;
   position:fixed;
   top: 0;
 }
@@ -43,3 +43,6 @@ body {
   max-width: 40px; 
   height: auto; 
 }
+.navbar__link:hover{
+   color: var(--color-titles-subtitles);
+  }
