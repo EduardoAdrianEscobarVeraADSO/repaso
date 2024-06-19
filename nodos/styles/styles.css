@@ -19,6 +19,13 @@ header{
 section{
   padding: var(--padding);
 }
+.bg-white{
+  background-color: white;
+  color: black;
+}
+.bg-negro{
+  color: black;
+}
 a{
   color: var(--Buttered__Rum);
   text-decoration: none;
