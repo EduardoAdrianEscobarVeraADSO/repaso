@@ -84,10 +84,10 @@ li.item:hover a{
 }
 
 .cards{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 1rem;
-
+ 
 }
 .card{
   width: 450px;
@@ -136,9 +136,8 @@ li.item:hover a{
   background-color: var(--Ripe__Lemon);
   color: var(--Black);
 }
-.button__text{
 
-}
+
 .button__icon{
   font-size: 1.4rem;
 }
